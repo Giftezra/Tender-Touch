@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Tender Touch</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="client_login">Client Login</string>
+    <string name="staff_login"> Staff Login</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="profile_img">Profile image</string>
+    <string name="txt_completed_task">Completed Task</string>
+    <string name="txt_appointments">Upcoming Appointments</string>
+    <string name="btn_appointment">Appointment</string>
+    <string name="ic_appointment">Appointment_ic</string>
+    <string name="ic_finished">Completed_ic</string>
+    <string name="ic_subscription">Subscription</string>
+    <string name="txt_subscription">Subscription</string>
+    <string name="btn_subscribed">Subscribe</string>
+    <string name="btn_switch_account">Switch Account</string>
+    <string name="btn_logout">Log out</string>
+    <string name="btn_messages">Messages</string>
+    <string name="btn_change_profile_pic">Change Image</string>
+    <string name="txt_phone">Phone</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_postcode">Post Code</string>
+    <string name="dob">DD/MM/YYYY</string>
+
+
+</resources>

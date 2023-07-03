@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Activities and Rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_activities">
+
+
+            <TextView
+                android:id="@+id/txt_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Start date and time" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/start_date"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="start date"
+                    android:inputType="date"
+                    android:onClick="showDatePicker"
+                    android:padding="20dp" />
+
+                <EditText
+                    android:id="@+id/start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Time"
+                    android:inputType="time"
+                    android:onClick="showTimePicker"
+                    android:padding="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="End date and time" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/end_date"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="End date"
+                    android:inputType="date"
+                    android:onClick="showDatePicker"
+                    android:padding="20dp" />
+
+                <EditText
+                    android:id="@+id/end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Time"
+                    android:inputType="time"
+                    android:onClick="showTimePicker"
+                    android:padding="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_hourly_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="50dp"
+                android:text="Enter charges per hour" />
+
+            <EditText
+                android:id="@+id/hourly_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Charges per hour"
+                android:inputType="numberDecimal"
+                android:padding="20dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_update_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Update Activities"
+            app:layout_constraintEnd_toEndOf="@+id/linearlayout_calender"
+            app:layout_constraintStart_toStartOf="@+id/linearlayout_calender"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout_calender" />
+
+        <ImageButton
+            android:id="@+id/ic_settings"
+            android:layout_width="42dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/txt_activities"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

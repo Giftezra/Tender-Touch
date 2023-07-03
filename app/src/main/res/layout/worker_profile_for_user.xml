@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:text="Profile page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="103dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="28yrs"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.178"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/txt_verified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:text="Verified"
+            app:layout_constraintEnd_toEndOf="@+id/txt_fullname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_fullname"
+            app:layout_constraintTop_toBottomOf="@+id/txt_fullname" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_role"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        <TextView
+            android:id="@+id/txt_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:text="Full name"
+            app:layout_constraintStart_toStartOf="@+id/txt_age"
+            app:layout_constraintTop_toBottomOf="@+id/txt_age" />
+
+        <TextView
+            android:id="@+id/txt_nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:text="Nationality"
+            app:layout_constraintEnd_toStartOf="@+id/nationality"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="72dp"
+            android:text="Nigerian"
+            android:padding="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_verified"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:text="Gender"
+            app:layout_constraintEnd_toStartOf="@+id/nationality"
+            android:padding="5dp"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="@+id/txt_nationality"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nationality" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:text="Male"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/nationality"
+            app:layout_constraintStart_toStartOf="@+id/nationality"
+            app:layout_constraintTop_toBottomOf="@+id/nationality" />
+
+        <TextView
+            android:id="@+id/txt_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:padding="5dp"
+            android:text="Hourly rate"
+            app:layout_constraintEnd_toStartOf="@+id/rate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_gender"
+            app:layout_constraintTop_toBottomOf="@+id/txt_gender" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="£20"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/gender"
+            app:layout_constraintStart_toStartOf="@+id/gender"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_availability">
+
+            <CalendarView
+                android:id="@+id/worker_calender"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="39dp"
+            android:text="Security guard"
+            android:padding="5dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_nationality"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/txt_availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Availability"
+            app:layout_constraintEnd_toEndOf="@+id/rate"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="@+id/txt_rate"
+            app:layout_constraintTop_toBottomOf="@+id/txt_rate" />
+
+        <TextView
+            android:id="@+id/txt_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:padding="5dp"
+            android:text="Expierience"
+            app:layout_constraintEnd_toStartOf="@+id/experience"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="57dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="88dp"
+            android:padding="5dp"
+            android:text="5Years"
+
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.389"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <TextView
+                android:id="@+id/txr_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Rating and Reviews"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_rating"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/txt_address" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/experience">
+
+            <TextView
+                android:id="@+id/txt_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Skill" />
+
+            <Spinner
+                android:id="@+id/skil_spinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                tools:layout_editor_absoluteX="-83dp"
+                tools:layout_editor_absoluteY="867dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_book_shift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:text="Book Shift"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
